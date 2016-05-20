@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">	
+	<head>		
+		<meta charset="utf-8">
+		<title></title>
+		
+		<link rel="stylesheet" href="style.css" />
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+		
+		<!--[if IE 6]>
+            <script type="text/javascript" src="js/ie6-transparency.js"></script>
+            <script>
+                DD_belatedPNG.fix('#header h1, #header h2, .button, #contact-form .submit, #nav');
+            </script>
+            <style>body { behavior: url("styles/ie6-hover-fix.htc"); }</style>
+            <link rel="stylesheet" type="text/css" href="styles/ie6.css" />
+        <![endif]--> 
+        <!--[if IE 7]>
+            <link rel="stylesheet" type="text/css" href="styles/ie7.css" />
+        <![endif]-->		
+	</head>
+	
+	<body>	
+		<div id="wrap">
+		
+			<div id="header">
+				<h1>x-arf</h1>
+				<h2>Network Abuse Reporting 2.0</h2>
+			</div><!--end header-->
+			
+			<div id="nav">
+				<ul>
+					<li><a href="index.html">About</a><span>~</span></li>
+					<li><a href="specification.html">Specification</a><span>~</span></li>
+					<li><a href="schemata.html">Schemata</a><span>~</span></li>
+					<li><a href="tools.html">Tools</a><span>~</span></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div><!--end nav-->		
+			
+			<div id="content">				
+				<h2 class="title">Tools</h2>
+				
+				<h3>
+				  Reading and Generating x-arf Reports
+				</h3>
+				<p>You will find tools for reading and generating the report data (which
+				is represented in yaml in the body of the 2nd mime part of the x-arf
+				report email) on the yaml website (<a href="http://www.yaml.org" title="Yaml">www.yaml.org</a>)<br />
+				You can just use your favourite email handling or parsing library to create or read a x-arf structured email.</p>
+
+
+				<h3>
+				  Structural Validation of the Report Data
+				</h3>
+				<p>yaml is convertible with json (<a href="http://www.json.org" title="Json">www.json.org</a>), so the validation of the
+				yaml data representations with the specific json schemas is possible with tools
+				available on <a href="http://www.json-schema.org" title="Json">www.json-schema.org</a>. (Please notice: We currently use Draft-02 of the json-schema draft to define the schemata.)</p>
+
+				
+				<h3>
+				  Software
+				</h3>
+				<p>The following tools provide you with some comfort in reading or
+				generating report emails:</p>
+			
+				<ul class="standard_list">
+						<li>
+					    x-arf report parser (beta): <a href="http://xarf-validator.abusix.com/" title="x-arf report parser (beta)">xarf-validator.abusix.com</a>
+					  </li>
+					<li>
+				    Read and validate reports in Ruby: <a href="http://rubygems.org/gems/xarf" title="read reports in Ruby">rubygems.org/gems/xarf</a>
+				  </li>
+				  <li>
+				    Generate reports in Python: <a href="http://x-arfreporting.sourceforge.net" title="Python X-Arf Reporting">x-arfreporting.sourceforge.net</a>
+				  </li>
+				  <li>
+				   Generate reports in PHP: <a href="http://www.blocklist.de/downloads/genxarf-php.tar.gz" title="PHP X-ARF Generator">genxarf-php.tar.gz</a>
+				  </li>
+				  <li>
+				    Validate X-ARF reports in PHP: <a href="http://www.blocklist.de/downloads/validatexarf-php.tar.gz" title="X-ARF Validator-PHP">validatexarf-php.tar.gz</a>
+				  </li>
+				  <li>
+				    A Java validator is available: <a href="http://code.google.com/p/jxarfvalidator/" title="JXarfValidator">code.google.com/p/jxarfvalidator</a>
+				  </li>
+				  <li>
+				    x-arf sender in Java: <a href="http://github.com/schmalle/x-arf-sender/" title="JXarfValidator">github.com/schmalle/x-arf-sender/</a>
+				  </li>
+				   <li>
+				    AbuseHQ - Network abuse and spam handling in the cloud: <a href="http://abusehq.com" title="AbuseHQ">abusehq.com</a>
+				  </li>
+				</ul>
+
+
+					  <br />
+				          </p>
+								
+				
+						
+			</div><!--end main-->
+						
+			<div id="footer">
+				<p>Copyright x-arf.org community | <a href="legal.html">Legal Info</a></p>
+			</div><!--end footer-->
+					
+		</div><!--end wrap-->	
+	</body>	
+</html>

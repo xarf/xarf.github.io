@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">	
+	<head>		
+		<meta charset="utf-8">
+		<title></title>
+		
+		<link rel="stylesheet" href="style.css" />
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+		
+		<!--[if IE 6]>
+            <script type="text/javascript" src="js/ie6-transparency.js"></script>
+            <script>
+                DD_belatedPNG.fix('#header h1, #header h2, .button, #contact-form .submit, #nav');
+            </script>
+            <style>body { behavior: url("styles/ie6-hover-fix.htc"); }</style>
+            <link rel="stylesheet" type="text/css" href="styles/ie6.css" />
+        <![endif]--> 
+        <!--[if IE 7]>
+            <link rel="stylesheet" type="text/css" href="styles/ie7.css" />
+        <![endif]-->		
+	</head>
+	
+	<body>	
+		<div id="wrap">
+		
+			<div id="header">
+				<h1>x-arf</h1>
+				<h2>Network Abuse Reporting 2.0</h2>
+			</div><!--end header-->
+			
+			<div id="nav">
+				<ul>
+					<li><a href="index.html">About</a><span>~</span></li>
+					<li><a href="specification.html">Specification</a><span>~</span></li>
+					<li><a href="schemata.html">Schemata</a><span>~</span></li>
+					<li><a href="tools.html">Tools</a><span>~</span></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div><!--end nav-->		
+			
+			<div id="content">				
+				<h2 class="title">Schemata</h2>
+				
+				          <p>
+
+
+				
+				If you are in need of a schema which is not mentioned here, or if you want to change an existing schema, please make a proposal to the mailinglist or have a look at the github <a href="https://github.com/abusix/xarf-schemata" target="_blank">repository</a>.
+				
+
+						</p>
+
+				<h3>
+				  Login-Attack
+				</h3>
+				        <p>
+				This schema is specially defined for all kinds of abusive login attacks.
+				<br />
+				Schema: <a href="schema/abuse_login-attack_0.1.2.json" title="Schema Login-Attacks" target="_blank">
+				  http://www.x-arf.org/schema/abuse_login-attack_0.1.2.json
+				</a>
+				<br />
+				(Example: <a href="examples/ssh-report.txt" title="Example SSH-Report in x-arf as .txt-File" target="_blank">http://www.x-arf.org/examples/ssh-report.txt</a> | 
+				<a href="examples/ssh-report.eml" title="Example SSH-Report in x-arf as .eml-File" target="_blank">.eml-File</a>)
+
+				          </p>
+	
+				
+
+				  <h3>
+				    Malware-Attack
+				  </h3>
+				<p>
+				A report for an abusive attack carried out by a malware.
+				<br />
+				Schema: <a href="schema/abuse_malware-attack_0.1.4.json" title="Schema Malware" target="_blank">
+				  http://www.x-arf.org/schema/abuse_malware-attack_0.1.4.json
+				</a>
+				<br />
+				(Example: <a href="examples/malware-attack-report.txt" title="Example Malware-Attack-Report in x-arf as .txt-File" target="_blank">http://www.x-arf.org/examples/malware-attack-report.txt</a>)
+
+				</p>
+
+
+				
+				  <h3>
+				   Fraud (Phishing, etc.)
+				  </h3>
+				<p>
+				  A report schema which can be used to report different kinds of fraud.
+				  <br />
+				  Schema: <a href="schema/fraud_0.1.4.json" title="Schema Fraud" target="_blank">
+				  http://www.x-arf.org/schema/fraud_0.1.4.json
+				</a>
+				<br />
+				(Example: <a href="examples/fraud-report.txt" title="Example Fraud-Report in x-arf as .txt-File" target="_blank">http://www.x-arf.org/examples/fraud-report.txt</a> | 
+				<a href="examples/fraud-report.eml" title="Example Fraud-Report in x-arf as .eml-File" target="_blank">.eml-File</a>)
+
+
+
+				</p>
+
+
+				 <h3>
+				   Info DNSBL
+				  </h3>
+				<p>
+				  A report schema for informational report about an ip address which is <br />(de-)listed on a dnsbl.
+				  <br />
+				  Schema: <a href="schema/info_dnsbl_0.1.0.json" title="Schema Info DNSBL" target="_blank">
+				  http://www.x-arf.org/schema/info_dnsbl_0.1.0.json
+				</a>
+				
+
+
+
+				</p>
+
+						
+			</div><!--end main-->
+						
+			<div id="footer">
+				<p>Copyright x-arf.org community | <a href="legal.html">Legal Info</a></p>
+			</div><!--end footer-->
+					
+		</div><!--end wrap-->	
+	</body>	
+</html>

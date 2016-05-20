@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">	
+	<head>		
+		<meta charset="utf-8">
+		<title>x-arf - Network Abuse Reporting 2.0</title>
+		
+		<link rel="stylesheet" href="style.css" />
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+		
+		<!--[if IE 6]>
+            <script type="text/javascript" src="js/ie6-transparency.js"></script>
+            <script>
+                DD_belatedPNG.fix('#header h1, #header h2, .button, #contact-form .submit, #nav');
+            </script>
+            <style>body { behavior: url("styles/ie6-hover-fix.htc"); }</style>
+            <link rel="stylesheet" type="text/css" href="styles/ie6.css" />
+        <![endif]--> 
+        <!--[if IE 7]>
+            <link rel="stylesheet" type="text/css" href="styles/ie7.css" />
+        <![endif]-->		
+	</head>
+	
+	<body>	
+		<div id="wrap">
+		
+			<div id="header">
+				<h1>x-arf</h1>
+				<h2>Network Abuse Reporting 2.0</h2>
+			</div><!--end header-->
+			
+			<div id="nav">
+				<ul>
+					<li><a href="index.html">About</a><span>~</span></li>
+					<li><a href="specification.html">Specification</a><span>~</span></li>
+					<li><a href="schemata.html">Schemata</a><span>~</span></li>
+					<li><a href="tools.html">Tools</a><span>~</span></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div><!--end nav-->		
+			
+			<div id="content">				
+				<h2 class="title">About</h2>
+				
+				<h3>What is x-arf?</h3>			
+				<p>x-arf is network abuse reporting 2.0 - it is an email format to report different types of network abuse incidents to network owners.</p>				
+									
+				<h3>Why x-arf?</h3>				
+				<p>The main intention of x-arf is to extend the so far known Abuse Reporting Format which is defined in RFC 5965 and itself is caught in its strict limitation to reporting abuse with messaging services only. Unfortunately, there is no possibility to report - for example - ssh attacks or phishing websites with it.</p> 
+
+				<p>In order to stop the increasing number of homegrown and self-invented reporting formats and offer an easy way to handle incoming complaints more effectively the x-arf format was designed. </p>
+
+<p>The x-arf design itself can be described with the following features: </p>
+<ul class="standard_list">
+				<li>Flexibility for any desired future changes</li>
+				<li>Support for any desired types of reports</li>
+				<li>Following the general structure and logic of RFC 3462</li>
+				<li>RFC compliant</li>
+				<li>Easy to generate</li>
+				<li>Easy to read (machine- as well as human-readable)</li>
+				<li>Tools are available in almost every programming language</li>
+				<li>Dynamically driven by the community, not static</li>
+				<li>Open and free</li>
+</ul>
+
+
+				<p>To reach these specifications, x-arf is designed as a container format. That means: the format only defines the basic nature of a container, but not the container itself. The containers can later be defined by the community and will be offered to everybody in a representation of schema files to understand the structure of the specific report.</p>				
+				<h3>Where to send abuse reports?</h3>			
+				<p>RFC 6650 indicates where to transmit solicited and unsolicited network abuse reports:</p>
+					<p><i>Deciding where to send an unsolicited report will typically rely on heuristics.  Abuse addresses in WHOIS [RFC3912] records of the IP address relaying the subject message and/or of the domain name found in the results of a PTR ("reverse lookup") query on that address are likely reasonable candidates, as is the abuse@domain role address (see [RFC2142]) of related domains</i></p>
+						<p><a href="http://en.wikipedia.org/wiki/Regional_Internet_registry" target="_blank">RIRs</a> offer various options to identify the abuse@domain role address. The RIR websites offer information on how to query their whois databases to find the appropriate addresses. You might also consider using the <a href="http://abusix.com/global-reporting/abuse-contact-db" target="_blank">Abuse Contact DB</a>.</p>		
+				
+						
+			</div><!--end main-->
+						
+			<div id="footer">
+				<p>Copyright x-arf.org community | <a href="legal.html">Legal Info</a></p>
+			</div><!--end footer-->
+					
+		</div><!--end wrap-->	
+	</body>	
+</html>
